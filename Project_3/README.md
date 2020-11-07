@@ -1,4 +1,4 @@
-# Blockchain Developer Nanodegree project 3 (Supply chain )
+# Blockchain Developer Nanodegree Project 3 (Supply chain )
 
 This repository containts an Ethereum DApp that demonstrates a Supply Chain flow between a Seller and Buyer. The user story is similar to any commonly used supply chain process. A Seller can add items to the inventory system stored in the blockchain. A Buyer can purchase such items from the inventory system. Additionally a Seller can mark an item as Shipped, and similarly a Buyer can mark an item as Received.
 
@@ -31,8 +31,8 @@ Truffle: v4.1.14
 ## Contract address on the Rinkeby test network (Etherscan):
 https://rinkeby.etherscan.io/address/0x83c415250ea9a964d7d4b23cde4a32102f01d671
 
-### Contract address: 0x83c415250ea9a964d7d4b23cde4a32102f01d671
-### Transaction id: 0x643a920900418c9e9f88247477f80c2fbd779773976c37ca893dae67f089db97
+**Contract address: 0x83c415250ea9a964d7d4b23cde4a32102f01d671**
+**Transaction id: 0x643a920900418c9e9f88247477f80c2fbd779773976c37ca893dae67f089db97**
 
 The DApp User Interface when running should look like...
 
