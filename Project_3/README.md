@@ -31,6 +31,9 @@ Truffle: v4.1.14
 ## Contract address on the Rinkeby test network (Etherscan):
 https://rinkeby.etherscan.io/address/0x83c415250ea9a964d7d4b23cde4a32102f01d671
 
+### Contract address: 0x83c415250ea9a964d7d4b23cde4a32102f01d671
+### Transaction id: 0x643a920900418c9e9f88247477f80c2fbd779773976c37ca893dae67f089db97
+
 The DApp User Interface when running should look like...
 
 ![truffle test](images/product_overview.png)
@@ -38,6 +41,7 @@ The DApp User Interface when running should look like...
 ![truffle test](images/farm_details.png)
 
 ![truffle test](images/product_details.png
+
 The successsive steps of adding roles and performing actions are captured below in transaction history
 
 ![truffle test](images/transaction_history.png)
