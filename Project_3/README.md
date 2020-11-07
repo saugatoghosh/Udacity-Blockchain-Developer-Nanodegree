@@ -33,13 +33,14 @@ https://rinkeby.etherscan.io/address/0x83c415250ea9a964d7d4b23cde4a32102f01d671
 
 The DApp User Interface when running should look like...
 
-![truffle test](images/ftc_product_overview.png)
+![truffle test](images/product_overview.png)
 
-![truffle test](images/ftc_farm_details.png)
+![truffle test](images/farm_details.png)
 
-![truffle test](images/ftc_product_details.png)
+![truffle test](images/product_details.png
+The successsive steps of adding roles and performing actions are captured below in transaction history
 
-![truffle test](images/ftc_transaction_history.png)
+![truffle test](images/transaction_history.png)
 
 
 ## Getting Started
