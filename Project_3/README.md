@@ -1,6 +1,36 @@
-# Supply chain & data auditing
+# Blockchain Developer Nanodegree project 3 (Supply chain )
 
 This repository containts an Ethereum DApp that demonstrates a Supply Chain flow between a Seller and Buyer. The user story is similar to any commonly used supply chain process. A Seller can add items to the inventory system stored in the blockchain. A Buyer can purchase such items from the inventory system. Additionally a Seller can mark an item as Shipped, and similarly a Buyer can mark an item as Received.
+
+## Project write-up - UML
+
+### Activity
+![Activity](UML/Activity-Diagram.jpg)
+
+### Sequence
+![Sequence](UML/Sequence-Diagram.jpg)
+
+### State
+![State](UML/State-Diagram.jpg)
+
+### Classes (Data Model)
+![Data-Model](UML/Data-Model-Diagram.jpg)
+
+## Project write-up - Libraries
+The `Roles` library was used by different access control contracts for easy add and remove in the supply chain 
+`truffle-hd-wallet-provider` to sign transactions for addresses.
+
+## IPFS
+IPFS is not used in this project
+
+## Program Versions numbers
+Node: v10.15.3
+Solidity: v0.4.24
+Truffle: v5.0.25
+Web3.js: v1.0.0-beta37 
+
+## Contract address on the Rinkeby test network (Etherscan):
+https://rinkeby.etherscan.io/address/0x1d4396d3dfdfffb57e2ae580f175e7dfcf08759a
 
 The DApp User Interface when running should look like...
 
