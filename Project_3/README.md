@@ -5,16 +5,16 @@ This repository containts an Ethereum DApp that demonstrates a Supply Chain flow
 ## Project write-up - UML
 
 ### Activity
-![Activity](UML/Activity-Diagram.jpg)
+![Activity](UML/Coffee_Activity.png)
 
 ### Sequence
-![Sequence](UML/Sequence-Diagram.jpg)
+![Sequence](UML/Coffee_Sequence.png)
 
 ### State
-![State](UML/State-Diagram.jpg)
+![State](UML/Coffee_State.png)
 
 ### Classes (Data Model)
-![Data-Model](UML/Data-Model-Diagram.jpg)
+![Data-Model](UML/Coffee_Classes.png)
 
 ## Project write-up - Libraries
 The `Roles` library was used by different access control contracts for easy add and remove in the supply chain 
@@ -24,13 +24,12 @@ The `Roles` library was used by different access control contracts for easy add 
 IPFS is not used in this project
 
 ## Program Versions numbers
-Node: v10.15.3
+Node: v12.19.0
 Solidity: v0.4.24
-Truffle: v5.0.25
-Web3.js: v1.0.0-beta37 
+Truffle: v4.1.14
 
 ## Contract address on the Rinkeby test network (Etherscan):
-https://rinkeby.etherscan.io/address/0x1d4396d3dfdfffb57e2ae580f175e7dfcf08759a
+https://rinkeby.etherscan.io/address/0x83c415250ea9a964d7d4b23cde4a32102f01d671
 
 The DApp User Interface when running should look like...
 
