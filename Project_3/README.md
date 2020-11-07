@@ -24,11 +24,11 @@ The `Roles` library was used by different access control contracts for easy add 
 IPFS is not used in this project
 
 ## Program Versions numbers
-Node: v12.19.0
-Solidity: v0.4.24
-Truffle: v4.1.14
+- Node: v12.19.0
+- Solidity: v0.4.24
+- Truffle: v4.1.14
 
-## Contract address on the Rinkeby test network (Etherscan):
+## Contract url on the Rinkeby test network (Etherscan):
 https://rinkeby.etherscan.io/address/0x83c415250ea9a964d7d4b23cde4a32102f01d671
 
 - **Contract address: 0x83c415250ea9a964d7d4b23cde4a32102f01d671**
