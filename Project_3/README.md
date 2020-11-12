@@ -1,16 +1,50 @@
-# Supply chain & data auditing
+# Blockchain Developer Nanodegree Project 3 (Supply chain )
 
 This repository containts an Ethereum DApp that demonstrates a Supply Chain flow between a Seller and Buyer. The user story is similar to any commonly used supply chain process. A Seller can add items to the inventory system stored in the blockchain. A Buyer can purchase such items from the inventory system. Additionally a Seller can mark an item as Shipped, and similarly a Buyer can mark an item as Received.
 
+## Project write-up - UML
+
+### Activity
+![Activity](UML/Coffee_Activity.png)
+
+### Sequence
+![Sequence](UML/Coffee_Sequence.png)
+
+### State
+![State](UML/Coffee_State.png)
+
+### Classes (Data Model)
+![Data-Model](UML/Coffee_Classes.png)
+
+## Project write-up - Libraries
+The `Roles` library was used by different access control contracts for easy add and remove in the supply chain 
+`truffle-hd-wallet-provider` to sign transactions for addresses.
+
+## IPFS
+IPFS is not used in this project
+
+## Program Versions numbers
+- Node: v12.19.0
+- Solidity: v0.4.24
+- Truffle: v4.1.14
+
+## Contract url on the Rinkeby test network (Etherscan):
+https://rinkeby.etherscan.io/address/0x83c415250ea9a964d7d4b23cde4a32102f01d671
+
+- **Contract address: 0x83c415250ea9a964d7d4b23cde4a32102f01d671**
+- **Transaction id: 0x643a920900418c9e9f88247477f80c2fbd779773976c37ca893dae67f089db97**
+
 The DApp User Interface when running should look like...
 
-![truffle test](images/ftc_product_overview.png)
+![overview](images/product_overview.png)
 
-![truffle test](images/ftc_farm_details.png)
+![farm](images/farm_details.png)
 
-![truffle test](images/ftc_product_details.png)
+![product](images/product_details.png)
 
-![truffle test](images/ftc_transaction_history.png)
+The successsive steps of adding roles and performing actions are captured below in transaction history
+
+![transaction](images/transaction_history.png)
 
 
 ## Getting Started
