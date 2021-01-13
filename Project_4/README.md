@@ -40,64 +40,66 @@ To build dapp for prod:
 Deploy the contents of the ./dapp folder
 
 
-## Navigate through the DAPP
+## Navigation through the DAPP
 
-To an esier navigation, the page is divided in different sections:
+The page is divided in different sections:
+* DAPP Logs
 * Airline actions
 * Flight actions
-* Passenger actions
 * Oracle actions
-* Logs
+* Passenger actions
 
-Every time an action is performed, a log will be displayed at the bottom "Logs" section. 
+Every time an action is performed, a log will be displayed at the top "Dapp Logs" section. 
 
 ### The basic steps to navigate and use the DAPP are the following:
 
-1) Open site with Metamask enabled and with contract owner account selected. Operational status should be displayed as true at logs (refresh page otherwise).
+1) Once the DAPP is run, the state of the contract( operational or not) is displayed in Logs.
 
-![truffle test](images/Operational_logs.png)
+![truffle test](images/dapplog.png)
 
-2) Add funds to activate the account. Minimum of 10 eth are required.
+2) The user comes to the Airlines Actions section for registering and funding airlines
 
-![truffle test](images/Fund.png)
-![truffle test](images/Fund_logs.png)
+![truffle test](images/airlinesaction.png)
 
-3) Register an airline introducing account address and name.
-![truffle test](images/Register_airline.png)
-   Then, an OK message will be logged and it will be added to airlines combobox
-![truffle test](images/Airline_registered.png)
-![truffle test](images/Airline_list.png)
-When registering the fifth airline, voting system starts and a log wil warn about it. Once the airline has 4 votes, it will be added as previous ones.
-![truffle test](images/Fifth_airline.png)
+3) Next the user adds funds of 10 ether to the first airline registered by default 
 
-4) Select in Metamask the new airline account.
-5) Add funds to the new airline.
-6) Register a flight introducing Flight Code and Destination. Click on the flight code to copy on clipboard.
+![truffle test](images/fund.png)
 
-![truffle test](images/Register_flight.png)
-![truffle test](images/Flight_display.png)
+4) The user registers three more airlines from the first airline and funds them.
 
-7) Switch in metamask to a third account, to be used as a passenger.
-8) Paste or write flight code and set the amount of ethers we want to pay for a flight insurance, and then click on "Buy".
+![truffle test](images/registerairline.png)
+   
+5) User selects a flight from pre-filled list of flight codes and registers one or more flight. 
+Each flight registered with default status code 'Unknown' shows up in Logs.
+This also populates the list of registered flights in Oracle Actions section below.
 
-![truffle test](images/Buy_insurance.png)
-![truffle test](images/Buy_logs.png)
+![truffle test](images/flightsaction.png)
+![truffle test](images/registerflight.png)
 
-9) Oracles working on server will return a specific status. By default, it is "ON TIME", but it can be changed clicking on Oracle Simulation status buttons. Click on "LATE AIRLINE" to be able to finish this circuit.
+6) The user can pays insurance premium of 1 ether from the selected passenger address.
 
-![truffle test](images/Status_buttons.png)
-![truffle test](images/Status_logs.png)
 
-10) Paste flight code on Oracles sections Flight Number box, select correct airline in dropdown menu and click on "Submit to Oracles". After few seconds, flight status will be updated in the flights display panel.
+![truffle test](images/insurancebought.png)
 
-![truffle test](images/Fetch_status.png)
-![truffle test](images/Updated_status.png)
 
-11) With the passenger account selected in Metamask, click on "Check credit". It will show payed insurance amount multiplied by 1.5.
+7) In the Oracles Action section once flight status is asked for a flight, oracles are triggered.
+The updated flight status for the flight from selected oracles is displayed in Logs.
 
-![truffle test](images/Check_credit.png)
+![truffle test](images/oracleaction.png)
+![truffle test](images/oracletrigger.png)
 
-12) Clicking on "Claim Credit" passenger will withdraw the credit and it will be added to its account.
+
+8) For flights with status of "Late Airline", the passenger can claim insurance in the Passengers Action section.
+The amount of insurance in ether the passenger is eligible to withdraw shows in Logs.
+
+![truffle test](images/passengeraction.png)
+![truffle test](images/credit.png)
+
+9) Finally the insurance amount can be withdrawn to the passenger's account.
+
+![truffle test](images/withdrawal.png)
+
+
 
 ## Resources
 
@@ -112,9 +114,8 @@ When registering the fifth airline, voting system starts and a log wil warn abou
 
 # Program version numbers
 
-* Node.js v6.14.4
-* Solidity v0.4.25
-* Truffle v5.1.27
-* Ganache v6.10.0-beta.2
+* Node.js v10.16.0
+* Solidity v^0.4.24
+* Truffle v5.1.53
 * truffle-hdwallet-provider v1.0.2
-* Web3 v1.2.6
+* Web3 v1.0.0-beta.37
