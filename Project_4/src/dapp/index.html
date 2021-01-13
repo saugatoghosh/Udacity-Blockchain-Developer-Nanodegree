@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+
+        <div id="display-wrapper" class="top-20">
+        </div>
+        <div class="form-group">
+            <h3>Airline Actions</h3>
+            <h5>Register new airline</h5>
+            <br>
+            Airline Address
+            <br>
+            <input type="text" id="airline-address"  value="0x0000000000000000000000000000000000000000" size="50">
+            <button class="btn-mine" type="button" id="register-airline">Register Airline</button>
+            <br>
+            <br>
+            <h5>Fund registered airlines</h5>
+            <select id="airlines"></select><br>
+            <br>
+            <input type="number" id="airline-fund" value="10">ETH
+            <button class="btn-mine" type="button" id="fund-airline">Fund Airline</button>
+        </div>
+        <div class="form-group">
+            <h3>Flights Action</h3>
+            Passenger
+            <br>
+            <select id="passengers"></select><br>
+            <br>
+            Flight (please select from below)
+            <br>
+            <select id="flights" onchange="getflight1()"></select><br>
+            <br>
+            Airline
+            <input type="text" id="airlineaddress" readonly=>
+            FlightNumber
+            <input type="text" id="flightnumber" size="10" readonly=>
+            Timestamp
+            <input type=number, id="timestamp" readonly=>
+            Destination
+            <input type="text" id="destination" size = "5" readonly=>
+            <br>
+            <br>
+            <button class="btn-mine" type="button" id="register-flight">Register  Flight</button>
+            <input type="number" id="insurance" value="1">ETH
+            <button class="btn-mine" type="button" id="purchase-insurance">Purchase Insurance</button>
+        </div>
+        <div class="form-group">
+            <h3>Oracle Actions</h3>
+            Flight (please select from below)
+            <br>
+            <select id="registeredflights" onchange="getflight2()"></select><br>
+            <br>
+            AirlineAddress
+            <input type="text" id="airlineaddress2" readonly=>
+            FlightCode
+            <input type="text" id="flightcode" size="10" readonly=>
+            DepartureTime
+            <input type="number" id="timestamp2" size="5" readonly=>
+            <button class="btn-mine" type="button" id="submit-oracle">Submit to Oracles</button>
+        </div>
+        <div class="form-group">
+            <h3>Passenger Actions</h3>
+            <button class="btn-mine" type="button" id="claim-insurance">Claim Insurance</button>
+            <button class="btn-mine" type="button" id="withdraw-insurance">Withdraw Insurance</button>
+        </div>
+        <script>
+            function getflight1(){
+              var dropdown = document.getElementById("flights");
+              var selection = dropdown.value;
+              console.log(selection);
+              var obj = JSON.parse(selection);
+              var airlineadd = document.getElementById("airlineaddress");
+              airlineadd.value = obj.airline;
+              var fltnumber = document.getElementById("flightnumber");
+              fltnumber.value = obj.flightnumber;
+              var tmpstmp = document.getElementById("timestamp");
+              tmpstmp.value = obj.timestamp;
+              var dstn = document.getElementById("destination");
+              dstn.value = obj.destination;
+          }
+
+          function getflight2(){
+              var dropdown = document.getElementById("registeredflights");
+              var sel = dropdown.value;
+              console.log(sel);
+              var obj2 = JSON.parse(sel);
+              var airlineadd = document.getElementById("airlineaddress2");
+              airlineadd.value = obj2.airline;
+              var fltnumber = document.getElementById("flightcode");
+              fltnumber.value = obj2.flightnumber;
+              var tmpstmp2 = document.getElementById("timestamp2");
+              tmpstmp2.value = obj2.timestamp;
+              
+          }
+        </script>
+    </main>
+
+</body>
+
+</html>
