@@ -78,7 +78,8 @@ This also populates the list of registered flights in Oracle Actions section bel
 
 6) The user can pays insurance premium of 1 ether from the selected passenger address.
 
-![truffle test](insurancebought.png)
+
+![truffle test](images/insurancebought.png)
 
 
 7) In the Oracles Action section once flight status is asked for a flight, oracles are triggered.
