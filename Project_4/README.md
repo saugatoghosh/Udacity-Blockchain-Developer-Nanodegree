@@ -114,9 +114,8 @@ The amount of insurance in ether the passenger is eligible to withdraw shows in 
 
 # Program version numbers
 
-* Node.js v6.14.4
-* Solidity v0.4.25
-* Truffle v5.1.27
-* Ganache v6.10.0-beta.2
+* Node.js v10.16.0
+* Solidity v^0.4.24
+* Truffle v5.1.53
 * truffle-hdwallet-provider v1.0.2
-* Web3 v1.2.6
+* Web3 v1.0.0-beta.37
