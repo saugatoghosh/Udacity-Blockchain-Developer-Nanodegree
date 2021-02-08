@@ -18,6 +18,8 @@ To run truffle tests:
 
 ## Deployed contracts
 
+![Image of contracts](https://github.com/saugatoghosh/Udacity-Blockchain-Developer-Nanodegree/blob/main/capstone/img/2021-02-04_18-08-36.png)
+
 ## contract abi of SolnSquareVerifier.sol
 
 [
